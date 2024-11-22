@@ -1,0 +1,20 @@
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Template Filters</h1>
+
+    <p>{{name|add_hello}}</p>
+    <p>Square Value of number 5: {{number|square}}</p>
+    <p>Reverse of "Django": {{"Django"|reverse_string}}</p>
+    <p>Absolute of -7: {{-7|absolute}}</p>
+    <p>Factorial of 10: {{10|factorial}}</p>
+    <p>Even or Odd for 8: {{8|even_or_odd}}</p>
+</body>
+</html>
+
